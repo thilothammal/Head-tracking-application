@@ -20,35 +20,8 @@ HeadTracking.cs to control the camera
 
 Real-time smoothing and mapping
 
-📷 How It Works
-Python captures video frames and detects the position of the user's face.
 
-The center of the detected face is sent over UDP to Unity.
 
-Unity receives the data and computes a smooth average.
-
-The Unity camera's position and rotation are adjusted based on head movement.
-
-💻 Installation
-Python Setup
-bash
-pip install opencv-python cvzone
-Run the tracking script:
-
-bash
-python head_tracker.py
-Unity Setup
-Create a Unity scene and import:
-
-UDPReceive.cs
-
-HeadTracking.cs
-
-Attach HeadTracking.cs to your camera GameObject.
-
-Link the scripts and configure ports (5052 default).
-
-Press Play in Unity while Python is running.
 
 📁 Project Structure
 HeadTrackingApp/
